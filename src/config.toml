@@ -1,0 +1,7 @@
+baseURL = "https://festivus.dev/"
+languageCode = "en-us"
+title = "festivus.dev"
+theme = "beyondnothing-simplified"
+
+[params]
+description = "The only thing 2020 needed is Seinfeld making a career change and getting into tech."

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+<meta charset="utf-8">
+{{ .Hugo.Generator }}
+
+<meta property="og:description" content="{{ .Site.Params.Description }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://festivus.dev/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2020-11-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-01T00:00:00+00:00" />
+
+<meta itemprop="name" content="{{ .Site.Title }}">
+<meta itemprop="description" content="{{ .Site.Params.Description }}">
+<meta itemprop="datePublished" content="2020-11-01T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-11-01T00:00:00+00:00" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/custom.css">
+<title>{{ .Site.Title }}</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<a href="/"><h1 id="title">{{ .Site.Title }}</h1></a>
+		<p>{{ .Site.Params.Description }}</p>
+	</header>
+	
+	<main role="main">
+{{ range (where .Site.RegularPages ".Params.hidefromhome" "!=" "true") }}
+
+
+			<h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></span>
+
+{{ end }}
+
+	</main>
+</div>
+
+</body>
+</html>
