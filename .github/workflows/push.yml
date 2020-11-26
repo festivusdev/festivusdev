@@ -14,7 +14,7 @@ jobs:
       uses: dend/actions/deploy-github-io@master
       env:
         BLOG_DEPLOY_KEY: ${{ secrets.BLOG_DEPLOY_KEY }}
-        BLOG_FOLDER: web
+        BLOG_FOLDER: src
         BLOG_PUBLISH_LOCATION: blog_pub
         BLOG_PUBLISH_URL: github.com/festivusdev/festivusdev.github.io
         GIT_EMAIL: 1389609+dend@users.noreply.github.com
