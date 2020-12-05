@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
-{{"<!--
+{{`<!--
 	___
 	| |
 	| |
@@ -37,7 +37,7 @@ ____| |/___
 
 Frank: And now as Festivus rolls on, we come to the feats of strength.
 George: Not the feats of strength! 
--->" | safeHTML }}
+-->` | safeHTML }}
 <head>
 	<meta charset="utf-8">
 	<meta property="og:description" content="{{ .Site.Params.Description }}" />
@@ -99,7 +99,7 @@ George: Not the feats of strength!
 		<main role="main">
 			{{ range (where .Site.RegularPages ".Params.hidefromhome" "!=" "true") }}
 			<h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-			<span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></span>
+			<span class="entry-meta"><time itemprop="datePublished" datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format "January 02, 2006" }}</time></span>
 			{{ end }}
 		</main>
 	</div>
