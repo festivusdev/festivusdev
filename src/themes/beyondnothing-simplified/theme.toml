@@ -1,12 +1,8 @@
-name = "BeyondNothing"
+name = "BeyondNothing-Simplified"
 license = "MIT"
-licenselink = "https://github.com/salcan/BeyondNothing/blob/master/LICENSE"
-description = "Simplest Hugo theme possible"
-homepage = "https://cloudconfusing.com/"
-min_version = 0.14
-tags = ["blog", "lander", "minimalist", "clean"]
-features = "nothing yet"
-
-[author]
-  name = "Cloud Confusing"
-  homepage = "https://cloudconfusing.com/"
+licenselink = "https://den.dev"
+description = "Simplified theme inspired by the work done on BeyondNothing."
+homepage = "https://den.dev/"
+min_version = 0.1
+tags = ["blog", "minimalist", "clean"]
+features = "Not available."
