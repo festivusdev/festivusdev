@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
-<!--
+{{"<!--
 	___
 	| |
 	| |
@@ -37,7 +37,7 @@ ____| |/___
 
 Frank: And now as Festivus rolls on, we come to the feats of strength.
 George: Not the feats of strength! 
--->
+-->" | safeHTML }}
 <head>
 	<meta charset="utf-8">
 	<meta property="og:description" content="{{ .Site.Params.Description }}" />
