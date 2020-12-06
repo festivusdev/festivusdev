@@ -57,6 +57,10 @@ George: Not the feats of strength!
 	<meta name="twitter:description" content="{{ .Site.Params.Description }}"/>
 	<meta name="twitter:site" content="@denniscode"/>
 
+	{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ end -}}
+
 	<title>{{ .Site.Title }}</title>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -102,6 +106,11 @@ George: Not the feats of strength!
 			<span class="entry-meta"><time itemprop="datePublished" datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format "January 02, 2006" }}</time></span>
 			{{ end }}
 		</main>
+
+		<footer>
+			<p>🏠 Stay at home. 🧼 Wash your hands. 😷 Wear a mask.</p>
+			<p>Crafted in 2020 by <a href="https://den.dev">Den Delimarsky</a>. <a href="/index.xml">Subscribe to RSS</a> for future posts.</p>
+		</footer>
 	</div>
 </body>
 </html>
