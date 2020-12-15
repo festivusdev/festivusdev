@@ -1,6 +1,6 @@
 baseURL = "https://festivus.dev/"
 languageCode = "en-us"
-title = "festivus.dev"
+title = "Engineering Festivus"
 theme = "beyondnothing-simplified"
 
 [params]
