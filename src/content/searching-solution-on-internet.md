@@ -1,6 +1,6 @@
 ---
 title: "Searching For A Solution On The Internet"
-date: 2020-11-24
+date: 2020-12-30
 layout: "single"
 description: "The group tries to find a way to get an answer for a programming problem."
 ---
