@@ -9,4 +9,4 @@ description: "George discovers quant trading and tries to get Jerry and Elaine t
 
 George discovers quant trading and tries to get Jerry and Elaine to join him.
 
-{{< tweet 1331695899672596480 >}}
+{{< tweet 1352706789653893120 >}}
